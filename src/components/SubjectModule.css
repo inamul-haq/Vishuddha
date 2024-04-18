@@ -1,0 +1,28 @@
+.subject-module-flex-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.subject-module-flex-internal-container-one{
+    width: 40%;
+
+}
+.subject-module-span{
+    color: rgb(24, 170, 255);
+}
+.subject-module-flex-internal-container-one h1{  
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+
+}
+
+.subject-module-para-container{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 80%;
+    
+}

@@ -1,0 +1,60 @@
+.offlineClass-module-flex-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+
+.offlineClass-module-flex-internal-container-one{
+    width: 40%;
+    margin-left: 2rem;
+
+}
+.offlineClass-module-span{
+    color: rgb(24, 170, 255);
+}
+.offlineClass-module-flex-internal-container-one h1{  
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+
+}
+
+.offlineClass-module-para-container{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    width: 80%;
+    
+}
+
+.offlineClass-module-flex-internal-container-two{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+
+}
+
+.offlineClass-module-flex-internal-container-two img{
+    width: 60%;
+}
+
+.offline-class-card{
+    margin-right: 1rem;
+}
+
+
+.offline-class-card span{
+    color: red;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.offline-class-padding{
+    margin-top: 1rem;
+}
+
+.offline-class-card-container{
+    display: flex;
+}

@@ -1,0 +1,28 @@
+.coursesModule-flex-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+.coursesModule-flex-internal-container-one{
+    width: 30%;
+
+}
+.coursesModule-education-span{
+    color: rgb(24, 170, 255);
+}
+.coursesModule-flex-internal-container-one h1{  
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+
+}
+.coursesModule-typewriter-span{
+    color: purple;
+}
+.coursesModule-para-container{
+    padding-top: 1rem;
+    
+}

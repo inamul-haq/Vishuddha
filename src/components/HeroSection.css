@@ -1,0 +1,27 @@
+.flex-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 7rem;
+}
+
+.flex-internal-container-one{
+    width: 30%;
+
+}
+.education-span{
+    color: rgb(24, 170, 255);
+}
+.flex-internal-container-one h1{  
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+
+}
+.typewriter-span{
+    color: purple;
+}
+.para-container{
+    padding-top: 1rem;
+    
+}

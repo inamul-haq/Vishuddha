@@ -1,0 +1,35 @@
+.courses-flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7rem;
+}
+
+.courses-internal-container-one img{
+    width: 60rem;
+    
+
+}
+.courses-education-span{
+    color: rgb(24, 170, 255);
+}
+.courses-h1{  
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+
+}
+.courses-typewriter-span{
+    color: purple;
+}
+.courses-para-container{
+    padding-top: 1rem;
+    width: 80%;
+    font-weight: 500;
+    font-family:cursive
+    
+}
+
+.course-para-img{
+    width: 100%;
+}

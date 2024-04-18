@@ -1,0 +1,63 @@
+.nav-container{
+    background-color: white;
+}
+
+
+.nav-internal{
+    display: flex;
+    justify-content:space-between;
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+
+.nav-child-one{
+    display:flex;
+    align-items: center;
+
+
+}
+
+.nav-child-two{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-child-three{
+    display: flex;
+    align-items: center;
+
+}
+
+
+#logo-button{
+    border: none;
+    background-color: transparent;
+}
+
+.image-logo{
+    width: 2rem;
+}
+
+#vashuddha-logo-text{
+    font-family: sans-serif;
+    font-weight: 2rem;
+    font-size: 2em;
+    font-style: normal; 
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 13%, rgba(9,121,71,1) 100%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-cont-two-btn{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    background-color: transparent;
+    border: none;
+    padding-left: 2rem;
+}
+
+#nav-line{
+    color: rgb(2, 24, 2);
+}

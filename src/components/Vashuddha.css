@@ -1,0 +1,57 @@
+.vashuddha-container {
+    position: relative;
+    background-image: url('../assets/output-onlinepngtools.png');
+    height: 60em;
+  }
+  
+
+.vashuddha-h1{
+    width: 100%;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    padding-top: 2rem;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(97, 0, 0);
+
+  }
+  
+.vashuddha-cont-why{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#vashuddha-why-img{
+    width: 40%;
+    
+}
+
+#vashuddha-why-img:hover {
+    filter: drop-shadow(0 0 3rem rgb(255, 255, 255));
+}
+
+.vashuddha-cont-two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.vashuddha-cont-two-text h3{
+    color: rgb(56, 8, 8);
+    font-size: 2.5rem;
+    font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.vashuddha-cont-two-text{
+    background-color: white;
+    border-radius: 1rem;
+    border: solid black 1px;
+    padding: 3em;
+
+}

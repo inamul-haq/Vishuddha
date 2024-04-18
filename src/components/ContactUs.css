@@ -1,0 +1,40 @@
+.contact-us-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact-us-container-Typewriter{
+    font-weight: 700;
+    font-size: 8rem;
+    color: purple;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+}
+
+.social-icons img{
+    width: 10rem;
+    margin: 5rem;
+
+}
+
+.social-icons img:hover {
+    transform: scale(1.5); 
+}
+
+.social-icons h2{
+    font-size: 1rem;
+}
+
+.social-icons-universal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
