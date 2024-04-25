@@ -1,106 +1,57 @@
 import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-
-import image from '../assets/offline-class.jpg'
+import image1 from '../assets/offline-class/1600x960_1314928-teachers.jpg'
+import image2 from '../assets/offline-class/1635153575phpizZMZB.jpeg'
+import image3 from '../assets/offline-class/2022_5$largeimg_89069664.jpeg'
+import image4 from '../assets/offline-class/60330841a31024adbdb58f8b.jpeg'
+import image5 from '../assets/offline-class/homeschool.jpg'
+import image6 from '../assets/offline-class/iStock-1171461134.jpg'
 import './OfflineClassModule.css'
 
+export default function Vashuddha() {
+  return (
+    <section class="campus col-lg-12 col-md-6 col-sm-3">
 
+        <h1><u>OFFLINE CLASSES</u></h1>
 
-function OfflineClassesModule() {
-
-
-    return (
-        <div className='offlineClass-module-flex-container'>
-          <div className='offlineClass-module-flex-internal-container-one'>
-            <h1>
-              Offline <span className='offlineClass-module-span'>Tutoring</span> 
-              
-            </h1>
-
-            <div className='offline-class-card-container'>
-            <div className='offline-class-card'>
-            <Card sx={{ minWidth: 195, minHeight:1 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  <span>Interactive Learning Environment</span>
-                </Typography>
-                <div className='offline-class-padding'></div>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Offline classes provide face-to-face interaction between students and instructors, fostering dynamic discussions and hands-on learning experiences.
-                </Typography>
-              </CardContent>
-            </Card> 
+        <div class="row">
+            <div class="offline-campus-col">
+            <img src={image1}/>
+            <div class="layer">
+                <h3>1:1 Mentoring</h3>
             </div>
-            <div className='offline-class-card'>
-            <Card sx={{ minWidth: 195, minHeight:1 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  <span>Personalized Attention</span>
-                </Typography>
-                <div className='offline-class-padding'></div>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                In offline classes, instructors can offer personalized support and guidance to students, addressing their individual learning needs more effectively.
-                </Typography>
-              </CardContent>
-            </Card> 
-            </div>
-            <div className='offline-class-card'>
-            <Card sx={{ minWidth: 195, minHeight:1 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  <span>Networking Opportunities</span>
-                </Typography>
-                <div className='offline-class-padding'></div>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Offline classes enable students to build relationships and networks with their peers, facilitating collaboration, teamwork, and social interaction.
-                </Typography>
-              </CardContent>
-            </Card> 
-            </div>
-            <div className='offline-class-card'>
-            <Card sx={{ minWidth: 195, minHeight:1 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  <span>Access to Physical Resources</span>
-                </Typography>
-                <div className='offline-class-padding'></div>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Offline classes often provide access to physical resources such as libraries, laboratories, and specialized equipment, enriching the learning experience.
-                </Typography>
-              </CardContent>
-            </Card> 
-            </div>
-            <div className='offline-class-card'>
-            <Card sx={{ minWidth: 195, minHeight:1 }}>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  <span>Structured Learning Environment</span>
-                </Typography>
-                <div className='offline-class-padding'></div>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Offline classes typically follow a structured schedule and format, helping students develop discipline, time management skills, and a sense of accountability.
-                </Typography>
-              </CardContent>
-            </Card> 
-            </div>
-
-            </div>
-            
-            
-            
-
-          
-          <p className='offlineClass-module-para-container'>Contact us for 1:1 free counselling</p>
-    
-          </div>
-          <div className='offlineClass-module-flex-internal-container-two'>
-            <img src={image} alt="offlineClass-module-Hero-Section" />
-    
-          </div>
         </div>
-      )
-    };
+                <div class="offline-campus-col">
+                <img src={image2}/>
+                <div class="layer">
+                    <h3>Collaboration</h3>
+                </div>
+            </div>
+                    <div class="offline-campus-col">
+                    <img src={image3}/>
+                    <div class="layer">
+                        <h3>Practicality</h3>
+                    </div>
+                </div>
 
-export default OfflineClassesModule
+                <div class="offline-campus-col">
+                    <img src={image4}/>
+                    <div class="layer">
+                        <h3>Socialization</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src={image5}/>
+                    <div class="layer">
+                        <h3>Hands-on</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src={image6}/>
+                    <div class="layer">
+                        <h3>Guidance</h3>
+                    </div>
+                </div>
+        </div>
+    </section>
+  );
+}

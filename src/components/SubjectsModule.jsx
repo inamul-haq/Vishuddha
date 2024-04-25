@@ -1,64 +1,57 @@
 import React from 'react';
-import image from '../assets/booktree.png'
-import './SubjectModule.css'
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
+import image1 from '../assets/subjects/science.jpeg'
+import image2 from '../assets/subjects/eco.jpg'
+import image3 from '../assets/subjects/english.jpg'
+import image4 from '../assets/subjects/hindi.jpg'
+import image5 from '../assets/subjects/geo.jpg'
+import image6 from '../assets/subjects/maths.jpg'
+import './OfflineClassModule.css'
 
-export default function SubjectsModule() {
-    const style = {
-        py: 0,
-        width: '100%',
-        maxWidth: 300,
-        borderRadius: 2,
-        border: '1px solid',
-        borderColor: 'divider',
-        backgroundColor: 'background.paper',
-      };
+export default function Vashuddha() {
+  return (
+    <section class="campus col-lg-12 col-md-6 col-sm-3">
 
-    return (
-        <div className='subject-module-flex-container'>
-          <div className='subject-module-flex-internal-container-one'>
-            <h1>
-              Subects of <span className='subject-module-span'>Tutoring</span> 
-              
-            </h1>
-            
-            <List sx={style}>
-      <ListItem>
-        <ListItemText primary="Mathematics" />
-      </ListItem>
-      <Divider component="li" />
-      <ListItem>
-        <ListItemText primary="Science" />
-      </ListItem>
-      <Divider variant="inset" component="li" />
-      <ListItem>
-        <ListItemText primary="English" />
-      </ListItem>
-      <Divider variant="middle" component="li" />
-      <ListItem>
-        <ListItemText primary="Hindi" />
-      </ListItem>
-      <Divider component="li" />
-      <ListItem>
-        <ListItemText primary="Geography" />
-      </ListItem>
-      <Divider component="li" />
-      <ListItem>
-        <ListItemText primary="Economics" />
-      </ListItem>
-    </List>
-          
-          <p className='subject-module-para-container'>he more that you read, the more things you will know, the more that you learn, the more places you’ll go.” —Dr. Seuss</p>
-    
-          </div>
-          <div className='subject-module-flex-internal-container-two'>
-            <img src={image} alt="subject-module-Hero-Section" />
-    
-          </div>
+        <h1><u>SUBJECTS</u></h1>
+
+        <div class="row">
+            <div class="offline-campus-col">
+            <img src={image6}/>
+            <div class="layer">
+                <h3>MATHEMATICS</h3>
+            </div>
         </div>
-      )
-    };
+                <div class="offline-campus-col">
+                <img src={image1}/>
+                <div class="layer">
+                    <h3>SCIENCE</h3>
+                </div>
+            </div>
+                    <div class="offline-campus-col">
+                    <img src={image3}/>
+                    <div class="layer">
+                        <h3>ENGLISH</h3>
+                    </div>
+                </div>
 
+                <div class="offline-campus-col">
+                    <img src={image4}/>
+                    <div class="layer">
+                        <h3>HINDI</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src={image5}/>
+                    <div class="layer">
+                        <h3>GEOGRAPHY</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src={image2}/>
+                    <div class="layer">
+                        <h3>ECONOMICS</h3>
+                    </div>
+                </div>
+        </div>
+    </section>
+  );
+}

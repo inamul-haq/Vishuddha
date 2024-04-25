@@ -1,0 +1,16 @@
+.yoga-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9rem;
+
+}
+.yoga-cont p{
+    color: green;
+}
+
+.yoga-cont h1{
+    
+
+
+}

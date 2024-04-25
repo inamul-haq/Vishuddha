@@ -1,60 +1,57 @@
-.offlineClass-module-flex-container{
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 7rem;
-}
-
-.offlineClass-module-flex-internal-container-one{
-    width: 40%;
-    margin-left: 2rem;
-
-}
-.offlineClass-module-span{
-    color: rgb(24, 170, 255);
-}
-.offlineClass-module-flex-internal-container-one h1{  
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 5.5rem;
-
-}
-
-.offlineClass-module-para-container{
-    margin-top: 2rem;
-    padding-top: 1rem;
+.campus{
     width: 80%;
-    
-}
-
-.offlineClass-module-flex-internal-container-two{
-    display: flex;
-    align-items: end;
-    justify-content: end;
-
-
-}
-
-.offlineClass-module-flex-internal-container-two img{
-    width: 60%;
-}
-
-.offline-class-card{
-    margin-right: 1rem;
-}
-
-
-.offline-class-card span{
-    color: red;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .offline-campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .offline-campus-col img{
+    width: 100%;
+    object-fit: contain;
+  }
+  .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover{
+    background: rgba(226,0,0,0.7);
+  }
+  .layer h3{
+    width: 100%;
     font-weight: 500;
-    margin-bottom: 2rem;
-}
-
-.offline-class-padding{
-    margin-top: 1rem;
-}
-
-.offline-class-card-container{
-    display: flex;
-}
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+  }
+  .campus h1 {
+    color: #f5b921; /* Yellow color */
+    font-weight: bold; /* Bold font weight */
+    font-size: 3rem; /* Adjust the font size as needed */
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .campus h1 {
+      font-size: 5rem;
+    }
+  }
+  

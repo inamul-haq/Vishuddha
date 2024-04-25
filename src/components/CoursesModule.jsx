@@ -1,36 +1,29 @@
 import React from 'react';
-import image from '../assets/student.png'
-import '../components/CoursesModule.css'
 import Typewriter from 'typewriter-effect';
-
+import studentImage from '../assets/student.png';
+import './CoursesModule.css'
 
 export default function CoursesModule() {
-  
-
-    
   return (
-    <div className='coursesModule-flex-container'>
-      <div className='coursesModule-flex-internal-container-one'>
+    <div className='courses-container'>
+      <div className='courses-content'>
         <h1>
-          We offer <span className='coursesModule-education-span'>#tutoring</span> from 1 to 12th 
-          <span className='coursesModule-typewriter-span'>
-          <Typewriter options={{strings: ['Grade'],
-            autoStart: true,
-            loop: true,
-          }}/>
-
+          Explore #Tutoring from 1 to 12th Grade{' '}
+          <span className='typing-animation'>
+            <Typewriter
+              options={{
+                strings: ['Grade'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </span>
-          
         </h1>
-        
-      
-      <p className='coursesModule-para-container'>Contact us to know more.......</p>
-
+        <p>Contact us to know more...</p>
       </div>
-      <div className='coursesModule-flex-internal-container-two'>
-        <img src={image} width={700} alt="Hero-Section" />
-
+      <div className='courses-image'>
+        <img src={studentImage} alt='Student' />
       </div>
     </div>
-  )
-};
+  );
+}

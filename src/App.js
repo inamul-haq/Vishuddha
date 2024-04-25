@@ -2,20 +2,26 @@ import './App.css';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ProcessSection from './components/ProcessSection';
+import Crousel from './components/Crousel';
 import Courses from './components/Courses';
 import Vashuddha from './components/Vashuddha';
-import AboutUs from './components/AboutUs';
-import ContactUs from './components/ContactUs';
+import Footer from './components/FooterModule';
+import Testomani from './components/Testomani';
+import ExperinceSection from './components/ExperinceSection';
 
 function App() {
   return <>
   <Navbar />
   <HeroSection />
   <ProcessSection />
-  <Courses />
+   <Courses />
   <Vashuddha />
-  <AboutUs />
-  <ContactUs /></>
+  <ExperinceSection/>
+  <Testomani/>
+  {/* <AboutUs /> */}
+  {/* <ContactUs /> */}
+  <Crousel/>
+  <Footer/></>
 }
 
 export default App;

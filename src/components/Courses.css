@@ -1,35 +1,74 @@
-.courses-flex-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 7rem;
-}
-
-.courses-internal-container-one img{
-    width: 60rem;
-    
+.visi{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
-.courses-education-span{
-    color: rgb(24, 170, 255);
+h1{
+  font-size: 36px;
+  font-weight: 600;
 }
-.courses-h1{  
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 5.5rem;
+p{
+  color:  rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px 10px 0 10px;
+  line-height:19px;
+  align-items: start;
+  text-indent: 0;
+  
+}
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.visi-col{
+  flex-basis: 31%;
+  background: #1f5156;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  align-items: baseline;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  color: #f5b921;
+}
+.visi-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+}
 
-}
-.courses-typewriter-span{
-    color: purple;
-}
-.courses-para-container{
-    padding-top: 1rem;
-    width: 80%;
-    font-weight: 500;
-    font-family:cursive
-    
+@media(max-width: 700px){
+  .row{
+      flex-direction: column;
+  }
+  .visi-vashuddha h4{
+    padding: 8%;
+  }
 }
 
-.course-para-img{
-    width: 100%;
+.para-crs{
+  padding-left: 1rem;
+  align-items: center;
+  width: 95%;
+}
+
+.visi-vashuddha h3{
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+
+.visi-vashuddha{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,14 +1,12 @@
 import Navbar from '../components/Navbar';
-import AboutUs from '../components/AboutUs';
-import ContactUs from '../components/ContactUs';
 import SubjectsModule from '../components/SubjectsModule';
+import Footer from '../components/FooterModule'
 
 function Subjects() {
   return <>
   <Navbar />
   <SubjectsModule />
-  <AboutUs />
-  <ContactUs /></>
+  <Footer/></>
 }
 
 export default Subjects;

@@ -6,7 +6,7 @@ import Ig from '../assets/social/instagram.png';
 import Gmail from '../assets/social/gmail.png';
 import Whatsapp from '../assets/social/whatsapp.png';
 import Call from '../assets/social/4070253.png';
-import Maps from '../assets/social/location.jpg'
+import Maps from '../assets/social/location.png'
 
 export default function ContactUs() {
   return (

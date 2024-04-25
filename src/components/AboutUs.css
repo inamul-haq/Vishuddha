@@ -1,36 +1,28 @@
-.about-container{
+.about-container {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
     align-items: center;
     background-color: black;
-    color: white;}
-
-.about-container h1{
-    font-size: 10rem;
+    color: white;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .about-content h1 {
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 5.5rem;
-
-}
-
-
-.about-container p{
-    font-size: large;
-}
-
-.about-cont-two{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    
-
-}
-
-.about-cont-two-para{
-    padding-top: 5rem;
-    width: 90%;
-}
-
-.star-rating-about-us{
-}
+    line-height: 1.2;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .star-rating {
+    margin-top: 1.5rem;
+  }
+  

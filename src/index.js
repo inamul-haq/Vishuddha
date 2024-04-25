@@ -8,6 +8,7 @@ import ContactUsPage from './pages/ContactUsPage';
 import Subjects from './pages/Subjects';
 import OfflineClass from './pages/OfflineClass';
 import Courses from './pages/Courses';
+import YogaPage from './pages/YogaPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     <Route path="/subjects" element={<Subjects />}></Route>
     <Route path="/onlineclasses" element={<OnlineClass />}></Route>
     <Route path="/offlineclasses" element={<OfflineClass />}></Route>
+    <Route path="/yoga" element={<YogaPage />}></Route>
     <Route path="/courses" element={<Courses />}></Route>
   </Routes>
 </BrowserRouter>

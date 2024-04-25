@@ -1,47 +1,119 @@
-import React from 'react';
-import '../components/Navbar.css'
-import Button from '@mui/material/Button';
-import image from '../assets/vashuddha.png'
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import '../components/Navbar.css';
+import { NavLink } from "react-router-dom";
+import { HamburgetMenuClose, HamburgetMenuOpen } from "./Icon";
+import Image from '../assets/vashuddha.svg';
 
 
 function Navbar() {
-  const navigate = useNavigate();
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+
 
   return (
-    
+    <>
+      <nav className="navbar">
+        <div className="nav-container">
+          <NavLink exact to="/" className="nav-logo ">
+            <img src={Image} alt="Vashuddha Logo" className="icon" />
+            <span>Vishuddha</span>
+          </NavLink>
 
-        <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="static">
-          <div className='nav-container'> 
-        <div className='nav-internal'>
-          
-          <div className='nav-child-one'>
-          <img onClick={() => navigate('/')} src={image} alt="Vishuddha" width='70em'/>
-          <Button onClick={() => navigate('/')} variant="text" id='vashuddha-logo-text'>Vishuddha</Button>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Home
+              </NavLink>
+            </li>
+             <li className="nav-item">
+              <NavLink
+                exact
+                to="/onlineclasses"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Online Classes
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/offlineclasses"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Offline Classes
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/courses"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Courses
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/subjects"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Subjects
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/yoga"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Yoga Classes
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contactus"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Contact Us
+              </NavLink>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            {click ? (
+              <span className="icon">
+                <HamburgetMenuClose />{" "}
+              </span>
+            ) : (
+              <span className="icon">
+                <HamburgetMenuOpen />
+              </span>
+            )}
           </div>
-
-          <div className='nav-child-two'>
-          <button className='nav-cont-two-btn' onClick={() => navigate('/')}>Home</button>
-            <button className='nav-cont-two-btn' onClick={() => navigate('/onlineclasses')}>Online Classes</button>
-            <button className='nav-cont-two-btn' onClick={() => navigate('/offlineclasses')}>Offline Classes</button>
-            <button className='nav-cont-two-btn' onClick={() => navigate('/courses')}>Courses</button>
-            <button className='nav-cont-two-btn' onClick={() => navigate('/subjects')}>Subjects</button>    
-          </div>
-
-          <div className='nav-child-three'>
-          <Button onClick={() => navigate('/contactus')} size="large" variant="contained" color="success">Contact Us</Button> 
-          </div>
-
         </div>
-    </div>
-          </AppBar>
-        </Box>
-      );
-    }
-    
+      </nav>
+    </>
+  );
+}
 
-
-export default Navbar
+export default Navbar;
