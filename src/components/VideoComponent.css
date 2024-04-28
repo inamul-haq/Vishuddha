@@ -1,0 +1,36 @@
+.video-text-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    width: 25%;
+  }
+  
+  /* Media Query for medium devices */
+  @media (max-width: 1024px) {
+    .video-text-container {
+      width: 30%; /* Adjust as needed for medium devices */
+      top: 20px; /* Reset top position */
+      left: 20px; /* Reset left position */
+    }
+  }
+  
+  /* Media Query for mobile */
+  @media (max-width: 768px) {
+    .video-text-container {
+      width: 90%; /* Adjust as needed for mobile layout */
+      left: 5%;
+      
+    }
+  }
+  
+  .button-yoga-contact{
+    background-color: rgb(255, 153, 0);
+    padding: 1.6% 2rem ;
+    align-items: center;
+    color: rgb(98, 20, 20);
+    font-weight: 600;
+}
